@@ -7,13 +7,13 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Kevin Min Seong Park"
+title                    : "KPark"
 title_separator          : "-"
 name                     : &name "Kevin Min Seong Park"
 description              : &description "Personal Website"
-url                      : https://mskpark.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : https://Woogsters.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : "mskpark/mskpark"
+repository               : "Woogsters/Woogsters.github.io"
 teaser                   : # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : # true, false (default)
 words_per_minute         : # 160
@@ -80,9 +80,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "Kevin Min Seong Park"
+  name             : "Kevin Park"
   avatar           : "profile.png"
-  bio              : "Ph.D student in the Mathematics department of U of Toronto"
+  bio              : "A guy curious about math"
   location         : "Toronto, Canada"
   employer         :
   pubmed           : 
@@ -96,7 +96,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "mskPark"
+  github           : "Woogsters"
   google_plus      :
   keybase          :
   instagram        :
@@ -121,8 +121,6 @@ author:
 include:
   - .htaccess
   - _pages
-  - _teaching
-  - files
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
