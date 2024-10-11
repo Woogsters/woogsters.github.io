@@ -6,151 +6,42 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-locale                   : "en-US"
-title                    : "KPark"
-title_separator          : "-"
-name                     : &name "Kevin Min Seong Park"
-description              : &description "Personal Website"
-url                      : https://Woogsters.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : "Woogsters/Woogsters.github.io"
-teaser                   : # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
-breadcrumbs              : # true, false (default)
-words_per_minute         : # 160
-future                   : false
-read_more                : "disabled" # if enabled, adds "Read more" links to excerpts
-talkmap_link             : false #change to true to add link to talkmap on talks page
-comments:
-  provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
-  disqus:
-    shortname            :
-  discourse:
-    server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
-  facebook:
-    appid                :
-    num_posts            : # 5 (default)
-    colorscheme          : # "light" (default), "dark"
-staticman:
-  allowedFields          : # ['name', 'email', 'url', 'message']
-  branch                 : # "gh-pages" # "master", "gh-pages"
-  commitMessage          : # "New comment."
-  filename               : # comment-{@timestamp}
-  format                 : # "yml"
-  moderation             : # true
-  path                   : # "_data/comments/{options.slug}"
-  requiredFields         : # ['name', 'email', 'message']
-  transforms:
-    email                : # "md5"
-  generatedFields:
-    date:
-      type               : # "date"
-      options:
-        format           : # "iso8601" # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
-atom_feed:
-  path                   : # blank (default) uses feed.xml
-
-# SEO Related
-google_site_verification :
-bing_site_verification   :
-alexa_site_verification  :
-yandex_site_verification :
-
-# Social Sharing
-twitter:
-  username               : # &twitter
-facebook:
-  username               :
-  app_id                 :
-  publisher              :
-og_image                 :  # Open Graph/Twitter default site image
-# For specifying social profiles
-# - https://developers.google.com/structured-data/customize/social-profiles
-social:
-  type                   : # Person or Organization (defaults to Person)
-  name                   : # If the user or organization name differs from the site's name
-  links: # An array of links to social media profiles
-
-
-# Analytics
-analytics:
-  provider               : # false (default), "google", "google-universal", "custom"
-  google:
-    tracking_id          :
-
+site:
+  locale                   : "en-US"
+  title                    : "Woogy Home"
+  name                     : "Woogsters"
+  description              : "Personal Website"
+  url                      : "https://Woogsters.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+  baseurl                  : "/blog" # the subpath of your site, e.g. "/blog"
+  repository               : "Woogsters/Woogsters.github.io"
 
 # Site Author
 author:
   name             : "Kevin Park"
-  avatar           : "profile.png"
-  bio              : "A guy curious about math"
+  avatar           : "assets/images/KevinProfessional.png" #"profile.png"
+  bio              : "A guy"
   location         : "Toronto, Canada"
-  employer         :
-  pubmed           : 
-  googlescholar    : 
-  email            :
-  researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
-  uri              :
-  bitbucket        :
-  codepen          :
-  dribbble         :
-  flickr           :
-  facebook         :
-  foursquare       :
+  email            : "kmsp0128@gmail.com"
   github           : "Woogsters"
-  google_plus      :
-  keybase          :
-  instagram        :
-  impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
-  lastfm           :
-  linkedin         :
-  orcid            : #"http://orcid.org/yourorcidurl"
-  pinterest        :
-  soundcloud       :
-  stackoverflow    : # http://stackoverflow.com/users/123456/username
-  steam            :
-  tumblr           :
-  twitter          : #"replacethistwitterhandle"
-  vine             :
-  weibo            :
-  xing             :
-  youtube          :
-  wikipedia        :
-
 
 # Reading Files
 include:
-  - .htaccess
   - _pages
+  - _posts
 exclude:
-  - "*.sublime-project"
-  - "*.sublime-workspace"
   - .asset-cache
   - .bundle
   - .jekyll-assets-cache
   - .sass-cache
   - CHANGELOG
-  - Capfile
   - Gemfile
-  - Gruntfile.js
   - LICENSE
   - README
-  - Rakefile
-  - assets/js/_main.js
-  - assets/js/plugins
-  - assets/js/vendor
-  - config
-  - gulpfile.js
-  - log
-  - node_modules
-  - package.json
-  - tmp
-  - vendor
 keep_files:
   - .git
   - .svn
 encoding: "utf-8"
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
-
 
 # Conversion
 markdown: kramdown
@@ -158,7 +49,6 @@ highlighter: rouge
 lsi: false
 excerpt_separator: "\n\n"
 incremental: false
-
 
 # Markdown Processing
 kramdown:
@@ -174,43 +64,29 @@ kramdown:
 
 # Collections
 collections:
-  teaching:
-    output: true
-    permalink: /:collection/:path/
-  cv:
+  resume:
     output: true
     permalink: /:collection/:path/
 
 
 # Defaults
 defaults:
-  # _posts
   - scope:
       path: ""
       type: posts
     values:
-      layout: single
+      layout: default
       author_profile: true
       read_time: false
       comments: false
       share: false
       related: false
-  # _pages
   - scope:
       path: ""
       type: pages
     values:
-      layout: single
+      layout: default
       author_profile: true
-  # _teaching
-  - scope:
-      path: ""
-      type: teaching
-    values:
-      layout: single
-      author_profile: true
-      share: false
-      comments: false
 
 # Sass/SCSS
 sass:

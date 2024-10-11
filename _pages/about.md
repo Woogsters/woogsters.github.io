@@ -1,6 +1,7 @@
 ---
 permalink: /
-title: KPark
+title: "Woogsters"
+subtitle: "About"
 excerpt: "About me"
 author_profile: true
 redirect_from: 
